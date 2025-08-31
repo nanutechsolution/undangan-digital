@@ -1,40 +1,63 @@
 <p align="center">
-  <a href="https://laravel.com" target="_blank">
-    <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo">
+  <a href="https://nanutechsolution.com" target="_blank">
+    <img src="https://raw.githubusercontent.com/nanutechsolution/undangan-digital/main/logo.png" width="300" alt="NanutechSolution Logo">
   </a>
 </p>
 
+<h1 align="center">Undangan Digital - NanutechSolution</h1>
+
 <p align="center">
-  <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-  <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-  <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-  <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+Digital invitation platform built with Laravel and TailwindCSS, designed to create elegant, responsive, and customizable invitations for weddings, khitanan, aqiqah, and other special events.
 </p>
 
-# Undangan Digital - NanutechSolution
+---
 
-Undangan digital berbasis Laravel untuk acara pernikahan, khitanan, aqiqah, dan lainnya. Proyek ini bertujuan untuk mempermudah pembuatan dan manajemen undangan online yang elegan dan responsif.
+## Table of Contents
 
-## Fitur Utama
+- [Features](#features)  
+- [Technology Stack](#technology-stack)  
+- [Installation](#installation)  
+- [Usage](#usage)  
+- [Demo](#demo)  
+- [Admin Panel](#admin-panel)  
+- [Contributing](#contributing)  
+- [License](#license)  
+- [Contact](#contact)  
 
-- **Tema Kustom**: Pilih dan sesuaikan tema undangan sesuai keinginan.
-- **RSVP Tamu**: Fitur konfirmasi kehadiran tamu secara online.
-- **Galeri Foto & Video**: Menampilkan foto dan video acara.
-- **Countdown Timer**: Hitung mundur menuju hari H.
-- **Pengaturan Tamu**: Kelola daftar tamu dengan mudah.
-- **Panel Admin**: Kelola undangan dan data tamu melalui dashboard admin.
+---
 
-## Prasyarat
+## Features
 
-- PHP >= 8.1
-- Composer
-- Node.js & npm
-- Database: MySQL/PostgreSQL/SQLite
+- **Customizable Templates:** Hundreds of templates to suit any event theme.  
+- **RSVP Management:** Track guest attendance online.  
+- **Media Gallery:** Upload and display photos and videos.  
+- **Countdown Timer:** Keep track of days until the event.  
+- **Guest Management:** Add, edit, and remove guests effortlessly.  
+- **Export Options:** Generate shareable links, printable invites, and digital cards.  
+- **Unlimited Revisions:** Update your invitation anytime with no expiry.  
 
-## Instalasi
+---
 
-Clone repositori ini:
+## Technology Stack
+
+- **Backend:** Laravel 10  
+- **Frontend:** TailwindCSS, Alpine.js  
+- **Database:** MySQL / PostgreSQL / SQLite  
+- **Deployment:** Docker-ready / Apache or Nginx  
+- **Version Control:** Git  
+
+---
+
+## Installation
+
+Clone the repository:
 
 ```bash
 git clone https://github.com/nanutechsolution/undangan-digital.git
 cd undangan-digital
+composer install
+cp .env.example .env
+php artisan key:generate
+npm install
+npm run dev
+php artisan serve
